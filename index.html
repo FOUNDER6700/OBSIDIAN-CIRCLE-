@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Obsidian Circle</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Professional Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobile Navigation -->
+    <header class="glass-nav">
+        <div class="nav-brand">
+            <svg class="nav-emblem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" stroke="#c5c6c7" stroke-width="2"/>
+                <circle cx="50" cy="50" r="30" stroke="#c5c6c7" stroke-width="1" stroke-dasharray="4 4"/>
+                <circle cx="50" cy="50" r="10" fill="#c5c6c7"/>
+            </svg>
+            <span>OBSIDIAN</span>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navMenu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#ranks" class="nav-link">Ranks</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#principles" class="nav-link">Principles</a>
+            <a href="#apply" class="nav-link highlight">Apply</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="content">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <svg class="hero-emblem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+                    <circle cx="50" cy="50" r="35" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="6 6"/>
+                    <circle cx="50" cy="50" r="15" fill="#ffffff" opacity="0.8"/>
+                </svg>
+                <h1 class="title">THE OBSIDIAN CIRCLE</h1>
+                <h2 class="subtitle">Knowledge. Unity. Purpose.</h2>
+                <p class="description">An online community for curious minds who question, learn, create, and build.</p>
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="navigateTo('about')">LEARN MORE</button>
+                    <button class="btn btn-primary" onclick="navigateTo('apply')">APPLY TO JOIN</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="page-section">
+            <h2 class="section-title">About The Circle</h2>
+            <div class="glass-panel">
+                <p>The Obsidian Circle is a collaborative community focused on continuous growth and creation. Our members focus on:</p>
+                <ul class="feature-list">
+                    <li><strong>• Puzzles & Strategy</strong></li>
+                    <li><strong>• Technology & Coding</strong></li>
+                    <li><strong>• Research & Learning</strong></li>
+                    <li><strong>• Entrepreneurship & Ideas</strong></li>
+                    <li><strong>• Creative Projects</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RANKS SECTION -->
+        <section id="ranks" class="page-section">
+            <h2 class="section-title">Circle Ranks</h2>
+            <div class="glass-panel">
+                <ul class="rank-list">
+                    <li><span class="symbol">◇</span> <strong>Initiate</strong> — New members beginning their journey.</li>
+                    <li><span class="symbol">○</span> <strong>Member</strong> — Active contributors.</li>
+                    <li><span class="symbol">△</span> <strong>Specialist</strong> — Members recognized for demonstrated skills.</li>
+                    <li><span class="symbol">◈</span> <strong>Council</strong> — Experienced members who help organize the community.</li>
+                    <li><span class="symbol">◎</span> <strong>Founder</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="page-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="glass-panel project-card">
+                <span class="status-badge">COMING SOON</span>
+                <h3>PROJECT ZERO — THE ARCHIVE</h3>
+                <p>A collaborative project combining research, puzzles, technology, strategy, ideas, and creative work.</p>
+            </div>
+        </section>
+
+        <!-- PRINCIPLES SECTION -->
+        <section id="principles" class="page-section">
+            <h2 class="section-title">Our Principles</h2>
+            <div class="glass-panel">
+                <ol class="principles-list">
+                    <li>Respect</li>
+                    <li>Voluntary Membership</li>
+                    <li>No Harm</li>
+                    <li>Build, Don't Destroy</li>
+                    <li>Integrity</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- APPLY SECTION -->
+        <section id="apply" class="page-section">
+            <h2 class="section-title">Application for Initiation</h2>
+            <p class="section-desc">Before joining the Circle, tell us a little about yourself.</p>
+            
+            <form id="applicationForm" class="glass-panel form-panel">
+                <div class="form-group">
+                    <label>1. What should we call you?</label>
+                    <input type="text" name="alias" required placeholder="Your alias or name">
+                </div>
+
+                <div class="form-group">
+                    <label>2. Age range:</label>
+                    <select name="age" required>
+                        <option value="" disabled selected>Select your age range</option>
+                        <option value="13-15">13–15</option>
+                        <option value="16-17">16–17</option>
+                        <option value="18+">18+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>3. What are your main interests?</label>
+                    <textarea name="interests" required placeholder="E.g., coding, history, game design..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>4. What skills do you currently have?</label>
+                    <textarea name="skills_current" required placeholder="Things you are good at..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>5. What skill would you like to develop?</label>
+                    <textarea name="skills_develop" required placeholder="Things you want to learn..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>6. Why do you want to join The Obsidian Circle?</label>
+                    <textarea name="why_join" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>7. What could you contribute to the Circle?</label>
+                    <textarea name="contribution" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>8. Which area interests you most?</label>
+                    <select name="area_interest" required>
+                        <option value="" disabled selected>Select an area</option>
+                        <option value="Puzzles & Strategy">Puzzles & Strategy</option>
+                        <option value="Technology & Coding">Technology & Coding</option>
+                        <option value="Research & Learning">Research & Learning</option>
+                        <option value="Entrepreneurship & Ideas">Entrepreneurship & Ideas</option>
+                        <option value="Creative Projects">Creative Projects</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>9. If you could start one project with the Circle, what would it be?</label>
+                    <textarea name="project_idea" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="principles_check" required>
+                    <label for="principles_check">I agree to follow the Circle's principles (Respect, Voluntary Membership, No Harm, Build Don't Destroy, Integrity).</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">SUBMIT APPLICATION</button>
+            </form>
+        </section>
+
+        <!-- SUCCESS/SUBMITTED SECTION -->
+        <section id="success" class="page-section">
+            <div class="glass-panel text-center">
+                <h2 class="section-title">APPLICATION RECEIVED</h2>
+                <p>Your application has been formatted and saved securely on your device.</p>
+                <p class="small-text">Because we respect privacy, this form does not automatically connect to a database. Please copy your application below and send it to our recruitment channel.</p>
+                
+                <textarea id="generatedApplication" readonly class="code-box"></textarea>
+                
+                <button type="button" class="btn btn-secondary full-width" id="copyBtn">COPY APPLICATION TEXT</button>
+                <p id="copyConfirm" class="success-msg"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>THE OBSIDIAN CIRCLE</h3>
+        <p>Knowledge. Unity. Purpose.</p>
+        <p class="footer-motto">“Question. Learn. Build.”</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  
