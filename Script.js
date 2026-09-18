@@ -1,4 +1,3 @@
-alert("JavaScript is working!");
 // Mobile Menu Toggle Logic
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
