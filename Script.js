@@ -44,7 +44,6 @@ const copyBtn = document.getElementById('copyBtn');
 const copyConfirm = document.getElementById('copyConfirm');
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevents page reload
 
     // Gather data from the form
     const formData = new FormData(form);
